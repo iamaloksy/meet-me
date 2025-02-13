@@ -15,10 +15,11 @@ import { useToast } from './ui/use-toast';
 import { Input } from './ui/input';
 
 const initialValues = {
-  dateTime: new Date(),
-  description: '',
-  link: '',
+  dateTime: new Date(), // Initializes with the current date and time
+  description: '',      // Empty string for description
+  link: '',             // Empty string for link
 };
+
 
 const MeetingTypeList = () => {
   const router = useRouter();
@@ -75,7 +76,7 @@ const MeetingTypeList = () => {
         img="/icons/plus.png"
         title="New Meeting"
         description="Start an instant meeting"
-        className="bg-aqua-1"
+        className="bg-orange-1"
         handleClick={() => setMeetingState('isInstantMeeting')}
       />
       <HomeCard
@@ -89,14 +90,14 @@ const MeetingTypeList = () => {
         img="/icons/scheduled.png"
         title="Schedule Meeting"
         description="Plan your meeting"
-        className="bg-purple-1"
+        className="bg-purple-2"
         handleClick={() => setMeetingState('isScheduleMeeting')}
       />
       <HomeCard
         img="/icons/rec.png"
         title="View Recordings"
         description="Meeting Recordings"
-        className="bg-blue-1"
+        className="bg-yellow-2"
         handleClick={() => router.push('/recordings')}
       />
 

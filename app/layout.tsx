@@ -32,15 +32,23 @@ export default function RootLayout({
           variables: {
             colorText: "#fff",
             colorPrimary: "#0E78F9",
+<<<<<<< HEAD
             colorBackground: "#96d099",
             colorInputBackground: "#96d099",
+=======
+            colorBackground: "#4B0082", //clerk popup color
+            colorInputBackground: "#4B0082",
+>>>>>>> 794de6e (Updated full project)
             colorInputText: "#fff",
           },
         }}
       >
-        <body className={`${inter.className} bg-dark-2`}>
+        
+        {/* clerk bg color */}
+
+        <body className={`${inter.className} bg-dark-5`}>  
           <Toaster />
-          {children}
+          {children}  
         </body>
       </ClerkProvider>
     </html>
